@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Display({ weatherData }) {
     if (!weatherData) {
-        return <div className=" mt-4 p-2 fs-3 text-center fst-italic text-primary">Enter City name to search...</div>;
+        return <div className=" mt-4 p-2 fs-3 text-center fst-italic">Enter City name to search...</div>;
     }
     if (weatherData.cod == 404) {
         return <div className=" mt-4  fs-3 text-center text-danger fw-bold">City not found.</div>;
